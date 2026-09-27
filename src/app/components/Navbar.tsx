@@ -9,6 +9,11 @@ const Navbar = () => {
                 <Link href="">Workouts</Link>
                 <Link href="">My Plan</Link>
             </div>
+    
+       const sideLink = <div className="flex gap-3">
+                <Link href="">Plan</Link>
+                <Link href="">Saved</Link>
+            </div>
 
     return (
         <div className="container mx-auto">
@@ -38,7 +43,7 @@ const Navbar = () => {
             </ul>
         </div>
             <div className="navbar-end">
-                <a className="btn">Button</a>
+                {sideLink}
             </div>
         </div>
         </div>

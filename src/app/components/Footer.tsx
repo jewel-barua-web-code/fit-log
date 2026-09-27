@@ -15,7 +15,7 @@ const Footer = () => {
                     <Link href="" className="btn btn-ghost text-xl">FITLOG</Link>
             </aside>
             <nav className="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
-                <p>Copyright © {new Date().getFullYear()} - All right reserved</p>
+                <p>© {new Date().getFullYear()} Fitlog — Workout Library. Train hard, log honest.</p>
             </nav>
         </footer>
        
