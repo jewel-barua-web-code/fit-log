@@ -6,13 +6,13 @@ import Link from "next/link";
 const Navbar = () => {
 
     const navLinks = <div className="flex gap-3">
-                <Link href="">Workouts</Link>
-                <Link href="">My Plan</Link>
+                <Link href="/">Workouts</Link>
+                <Link href="/myplan">My Plan</Link>
             </div>
     
        const sideLink = <div className="flex gap-3">
-                <Link href="">Plan</Link>
-                <Link href="">Saved</Link>
+                <Link href="/myplan">Plan</Link>
+                <Link href="/myplan">Saved</Link>
             </div>
 
     return (
