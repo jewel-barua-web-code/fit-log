@@ -11,8 +11,8 @@ const Navbar = () => {
             </div>
     
        const sideLink = <div className="flex gap-3">
-                <Link href="/myplan">Plan</Link>
-                <Link href="/myplan">Saved</Link>
+                <Link href="/myplan">Plan <span className="badge bg-lime-400 rounded-xl text-black font-bold">0</span></Link>
+                <Link href="/myplan">Saved <span className="badge bg-lime-400 rounded-xl text-black font-bold">0</span></Link>
             </div>
 
     return (
