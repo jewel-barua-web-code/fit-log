@@ -1,3 +1,5 @@
+
+
 import Image from "next/image";
 
 const Page = async ({ params }) => {
@@ -6,17 +8,18 @@ const Page = async ({ params }) => {
   const res = await fetch(
     `https://api.abcz.workers.dev/api/fitlog/${carddetails}`
   );
-
+  
   if (!res.ok) {
     throw new Error("Failed to fetch workout data");
   }
 
   const workout = await res.json();
 
+
+
   return (
     <div className="hero bg-base-200 min-h-screen">
       <div className="hero-content flex-col lg:flex-row">
-        
         
         <div>
           <Image
@@ -28,7 +31,6 @@ const Page = async ({ params }) => {
           />
         </div>
 
-        {/* Workout Details */}
         <div>
           <h2 className="text-5xl font-bold">
             {workout.name}
@@ -49,7 +51,7 @@ const Page = async ({ params }) => {
             ))}
           </div>
 
-          {/* Workout Information */}
+     
           <div className="mt-4 mb-2">
             <table className="table border">
               <tbody>

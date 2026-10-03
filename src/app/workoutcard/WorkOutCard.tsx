@@ -1,5 +1,6 @@
 "use client";
 
+import Image from 'next/image';
 import Link from 'next/link';
 import { FaRegClock, FaRegStar } from 'react-icons/fa';
 import { TbFlameFilled } from 'react-icons/tb';
@@ -11,7 +12,6 @@ const WorkOutCard = ({post}) => {
     image,
     muscleGroups,
     equipment,
-    difficulty,
     rating,
     caloriesBurned,
     duration
@@ -22,9 +22,12 @@ const WorkOutCard = ({post}) => {
     return (
         <Link href={`/workoutcard/${id}`} className="card bg-base-100 w-96 shadow-xl">
   <figure>
-    <img
+    <Image
       src={image}
       alt={name}
+      width={400}
+      height={400}
+      className="rounded-xl"
     />
   </figure>
 
